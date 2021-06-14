@@ -22,4 +22,28 @@ public class SensorReading {
                 ", temperature=" + temperature +
                 '}';
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Long getTimestap() {
+        return timestap;
+    }
+
+    public void setTimestap(Long timestap) {
+        this.timestap = timestap;
+    }
+
+    public Double getTemperature() {
+        return temperature;
+    }
+
+    public void setTemperature(Double temperature) {
+        this.temperature = temperature;
+    }
 }
