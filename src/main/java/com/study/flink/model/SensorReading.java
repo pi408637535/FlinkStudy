@@ -1,49 +1,27 @@
 package com.study.flink.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
 public class SensorReading {
     private String name;
-    private Long timestap;
+    private Long timestamp;
     private Double temperature;
 
     public SensorReading() {
     }
 
-    public SensorReading(String name, Long timestap, Double temperature) {
-        this.name = name;
-        this.timestap = timestap;
-        this.temperature = temperature;
-    }
+
 
     @Override
     public String toString() {
         return "SensorReading{" +
                 "name='" + name + '\'' +
-                ", timestap=" + timestap +
+                ", timestap=" + timestamp +
                 ", temperature=" + temperature +
                 '}';
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public Long getTimestap() {
-        return timestap;
-    }
-
-    public void setTimestap(Long timestap) {
-        this.timestap = timestap;
-    }
-
-    public Double getTemperature() {
-        return temperature;
-    }
-
-    public void setTemperature(Double temperature) {
-        this.temperature = temperature;
-    }
 }
